@@ -1,38 +1,86 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
-body{
-    margin: 0px;
+*{
+    box-sizing: border-box;
     padding: 0px;
+    margin: 0px;
+}
+body{
     font-family: 'Roboto', sans-serif;
     color: black;
-}
-nav{
-    width: 100%;
-    height: 40px;
-}
-ul{
-    list-style-type: none;
-    overflow: hidden;
-    margin: 0;
-    padding: 0;
-}
-li{
-    float: left;
-    padding:10px 0px;
-    margin: 0 10px;
-}
-.nav-right{
     position: relative;
-    right: 10px;
-}
-input{
-    border-style: none;
-}
-.search{
-    border: 1px solid black;
-    border-radius: 25px;
-    width: 300px;
-    height: 40px;
 }
 a{
     text-decoration: none;
+    color: darkblue;
+}
+nav ul{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+nav li{
+        display: inline-block;
+}
+nav a{
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        text-decoration: none;
+        padding: 16px 22px;
+        color: black;
+        font-weight: bold;
+}
+
+.nav-right{
+    position: absolute;
+    right: 10px;
+    top: 0px;
+}
+footer .first{
+    position: absolute;
+    bottom: 35px;
+    padding: 6px 12px;
+    list-style: none;
+}
+footer .second{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    position: absolute;
+    bottom: 0px;
+}
+footer .second li{
+    display: inline-block;
+}
+footer .second a{
+    display: block;
+    text-decoration: none;
+    padding: 6px 15px;
+    color: black;
+}
+main{
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: 40px;
+}
+.search{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    border: 1px solid black;
+    border-radius: 10%;
+    width: 400px;
+}
+
+#search{
+    width: 350px;
+    border: none;
+}
+.buttons button{
+    border: none;
+    padding: 10px;
+    margin: 25px;
 }
